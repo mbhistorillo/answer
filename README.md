@@ -5,5 +5,5 @@
 		download link and instructions on how to install can be found at https://gist.github.com/mani95lisa/6740671
 3. Script is executed by using the following format 
 		script.sh <target file>
-		eg.
+		e.g.
 		script.sh /var/log/httpd/access_log
