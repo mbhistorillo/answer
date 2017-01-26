@@ -7,7 +7,7 @@ cat $log | awk  '{print $9}' | sort | uniq -c | sort -nr | awk '{print "http cod
 # Check if file was changed
 while  S=$(inotifywait -eMODIFY $log 2>/dev/null)
 do
-echo "======="
+echo "=======" $(date)
  # if it was changed sort and count each unique http code
 cat $log | awk  '{print $9}' | sort | uniq -c | sort -nr | awk '{print "http code " $2 ": " $1}'
 done
